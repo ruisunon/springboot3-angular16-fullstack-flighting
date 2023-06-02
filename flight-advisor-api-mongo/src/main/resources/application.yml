@@ -1,0 +1,26 @@
+server:
+  port: 9000
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/flights
+  cache:
+    type: redis
+    time-to-live: 300000
+  webflux:
+    problemDetails:
+      enabled: true
+
+application:
+  public_routes: /login,/public/**,/version,/status,/actuator/**
+  jwt:
+      secretKey: 404E6352ecf1222c-88fd-47f3-988f-bdd78bade1a66556A58
+      expiration: 86400000 # a day
+      refreshToken:
+        expiration: 604800000 # 7 days
+
+logging:
+  level:
+    root: INFO
+    web: DEBUG
+    io.rxs.flight.reactive: DEBUG
