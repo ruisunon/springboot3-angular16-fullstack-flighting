@@ -3,7 +3,6 @@ Flight advisor Service UI is the primarily **user interface** for managing *flig
 *cities* with their *comments*. With the core functionality of finding 
 the cheapest flight from city A to city B based on price, returning all the trip information alongside the distance.
 
-for full documentation look at [here](https://github.com/mohamed-taman/Flight-Advisor/tree/main).
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
